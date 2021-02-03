@@ -1,0 +1,357 @@
+@media (max-width: 1366px) {
+  .container {
+    padding: 0 40px;
+  }
+  .intro__wrapper,
+  .catalog__wrapper {
+    padding-left: 40px;
+  }
+  .intro__info {
+    width: 50%;
+    justify-content: center;
+    margin-right: 40px;
+  }
+  .intro__title {
+    margin-top: 120px;
+    font-size: 85px;
+    line-height: 90px;
+  }
+  .intro__descr {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 160px;
+  }
+
+  .intro__btn {
+    width: 100%;
+  }
+
+  .slider__counter {
+    top: 480px;
+  }
+  .slider .slick-arrow {
+    top: 480px;
+  }
+  .title {
+    margin-bottom: 50px;
+    font-size: 50px;
+    line-height: 56px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .catalog__wrapper {
+    padding: 0 40px;
+    margin-bottom: 80px;
+  }
+  .catalog__slider {
+    max-width: 820px;
+    margin: 0 auto;
+  }
+  .catalog__slider .slick__slide {
+    width: 400px;
+    margin-right: 0;
+    // padding: 0 20px;
+  }
+
+  /*   .catalog__slider .slick-active.slick-current {
+    margin-right: 20px;
+  } */
+
+  .catalog__slides .slick-list {
+    padding: 0;
+    margin: 0 -10px;
+  }
+
+  .catalog__slides .slick-prev {
+    left: 485px;
+  }
+
+  .catalog__slides .slick-next {
+    left: 660px;
+  }
+
+  .schedule {
+    margin-bottom: 80px;
+  }
+  .schedule__table {
+    margin-bottom: 65px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .intro__info {
+    justify-content: space-between;
+  }
+  /*   .intro__title {
+    font-size: 70px;
+    line-height: 80px;
+  } */
+  .intro__descr {
+    margin-bottom: 40px;
+  }
+  .button {
+    font-size: 18px;
+    line-height: 20px;
+    padding: 31px 50px 30px 50px;
+  }
+  .intro__slider {
+    width: 50%;
+    margin-left: auto;
+  }
+
+  .intro__slider::after,
+  .intro__slider::before {
+    display: none;
+  }
+  .slider__item {
+    display: block;
+    margin: 0 auto;
+
+    max-width: 80%;
+    //height: auto;
+    margin-top: 20px;
+  }
+  /*   .slider__img {
+    object-fit: cover;
+  } */
+  .slider__counter {
+    display: none;
+  }
+  .slider .slick-dots {
+    width: 25%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .slick-dots button {
+    font-size: 0;
+    padding: 0;
+    width: 12px;
+    height: 12px;
+    background-color: $accent-color;
+    border-radius: 50%;
+    border: none;
+  }
+  .schedule__table {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .schedule__date {
+    width: 20%;
+    padding-right: 45px;
+    font-size: 40px;
+    line-height: 46px;
+    padding-top: 40px;
+  }
+  .lesson {
+    width: 25%;
+    padding-top: 40px;
+  }
+  /*   .slider .slick-active,
+  .slider .slick-slide {
+    transform: none;
+  }
+
+  .slider .slick-active.slick-current,
+  .slider .slick-current-clone-animate {
+    transform: none;
+  } */
+}
+
+@media (max-width: 1100px) {
+  .catalog__slides .slick-arrow {
+    width: 40px;
+    height: 40px;
+  }
+
+  .catalog__slides .slick-prev {
+    left: 550px;
+  }
+
+  .catalog__slides .slick-next {
+    left: 720px;
+  }
+  .schedule {
+    margin-bottom: 40px;
+  }
+  .schedule__date {
+    padding: 0;
+    padding-bottom: 20px;
+    text-align: center;
+    transform: rotate(270deg);
+    font-size: 26px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 850px) {
+  body {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .title {
+    font-size: 40px;
+    line-height: 46px;
+    margin-bottom: 40px;
+  }
+
+  .intro__wrapper {
+    flex-direction: column;
+    margin-bottom: 40px;
+    padding: 0 20px;
+  }
+  .intro__info {
+    width: 100%;
+    order: 1;
+    z-index: 10;
+    margin-right: 0;
+    margin-top: -250px;
+  }
+  .intro__title {
+    font-size: 66px;
+    line-height: 70px;
+    margin-top: 0;
+    margin-bottom: 150px;
+  }
+  /*
+  .intro__title-part--1 {
+    display: inline-block;
+  } */
+  .intro__descr {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 60px;
+    //padding-right: 50px;
+    //padding-left: 50px;
+  }
+  .intro__btn {
+    width: 50%;
+    margin: 0 auto 40px;
+  }
+  .intro__slider {
+    margin-left: auto;
+  }
+  .slider__item {
+    width: 100%;
+  }
+
+  .catalog__wrapper {
+    margin-bottom: 40px;
+  }
+
+  .catalog__slider {
+    max-width: 400px;
+  }
+
+  .catalog__slides .slick-list {
+    padding: 0;
+    margin: 0;
+  }
+  .catalog__slides .slick-slide {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .catalog__slider .slick-dots {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .catalog__slide-info {
+    padding: 35px 39px 35px 40px;
+  }
+
+  .catalog__slide-title {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+  .catalog__slide-text {
+    margin-bottom: 15px;
+  }
+
+  .catalog__button {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .lesson {
+    padding-left: 10px;
+    padding-right: 5px;
+  }
+  .lesson__title {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+  .lesson__teacher {
+    display: block;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .schedule__date {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .schedule__hours {
+    font-size: 16px;
+    line-height: 22px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container,
+  .intro__wrapper {
+    padding: 0 20px;
+  }
+
+  .intro__title {
+    font-size: 55px;
+    line-height: 60px;
+    margin-bottom: 160px;
+  }
+
+  .intro__slider {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .title {
+    padding-left: 100px;
+    &::before {
+      display: none;
+    }
+  }
+  .button {
+    width: 100%;
+    margin: 0 auto 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    padding-left: 0;
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 25px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .button {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 20px 30px 20px 30px;
+  }
+  .lesson__teacher {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}

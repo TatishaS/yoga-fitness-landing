@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Home fitness</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header__menu menu" id="header__nav">
+          <button class="menu__btn">
+            <span class="menu__btn-line"></span>
+          </button>
+          <ul class="menu__list">
+            <li class="menu__item" data-menuanchor="catalog">
+              <a href="#catalog" class="menu__item-link">Каталог</a>
+            </li>
+            <li class="menu__item" data-menuanchor="schedule">
+              <a href="#schedule" class="menu__item-link">Расписание</a>
+            </li>
+            <li class="menu__item" data-menuanchor="new">
+              <a href="#new" class="menu__item-link">Новая программа</a>
+            </li>
+            <li class="menu__item" data-menuanchor="food">
+              <a href="#food" class="menu__item-link">Food</a>
+            </li>
+            <li class="menu__item" data-menuanchor="feedback">
+              <a href="#feedback" class="menu__item-link">Задать вопрос</a>
+            </li>
+          </ul>
+          <div data-menuanchor="top">
+            <a class="menu__logo-link" href="#top">
+              <img
+                src="../images/logo.svg"
+                alt="Логотип FitCosy"
+                class="menu__logo"
+              />
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main" id="fullpage">
+      <section class="page-section intro" data-anchor="top">
+        <div class="intro__wrapper">
+          <div class="intro__info">
+            <h1 class="intro__title">
+              <span class="intro__title-part intro__title-part--1">Home</span>
+              <span class="intro__title-part intro__title-part--2"
+                >fitness</span
+              >
+            </h1>
+            <p class="intro__descr">
+              Лучшие тренировки теперь не выходя из дома. Каждую неделю на нашем
+              портале.
+            </p>
+            <a class="intro__btn button" href="#">Купить тренировку</a>
+          </div>
+
+          <div class="intro__slider slider">
+            <ul class="slider__items">
+              <li class="slider__item">
+                <img
+                  class="slider__img"
+                  src="../images/preview-1@1x.jpg"
+                  alt="Комплексная тренировка на мышцы ног"
+                />
+              </li>
+              <li class="slider__item">
+                <img
+                  class="slider__img"
+                  src="../images/preview-2@1x.jpg"
+                  alt="Тренировка на укрепление мышц спины"
+                />
+              </li>
+              <li class="slider__item">
+                <img
+                  class="slider__img"
+                  src="../images/preview-3@1x.jpg"
+                  alt="Мягкая растяжка для всего тела"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section catalog" data-anchor="catalog">
+        <div class="catalog__wrapper">
+          <h2 class="catalog__title title">Каталог</h2>
+          <div class="catalog__slider">
+            <div class="catalog__slides">
+              <div class="catalog__slide">
+                <img
+                  class="catalog__img"
+                  src="../images/catalog-1.jpg"
+                  alt="Кардио для новичков"
+                />
+                <div class="catalog__slide-info">
+                  <h3 class="catalog__slide-title">
+                    Кардио <br />для новичков
+                  </h3>
+                  <p class="catalog__slide-text">
+                    Кардио тренировки не обязательно должны быть изнуряющими. На
+                    этом интенсиве мы разберем простые упражнения для
+                    начинающих.
+                  </p>
+                  <p class="catalog__slide-teacher">
+                    <span>Тренер: </span><span>Ольга Кравцева</span>
+                  </p>
+                </div>
+              </div>
+              <div class="catalog__slide">
+                <img
+                  class="catalog__img"
+                  src="../images/catalog-2.jpg"
+                  alt="Фитнес аэробика"
+                />
+                <div class="catalog__slide-info">
+                  <h3 class="catalog__slide-title">фитнес <br />аэробика</h3>
+                  <p class="catalog__slide-text">
+                    Программа для тех, кто скучает по 80м. Активная программа на
+                    все группы мышц с интенсивными кардио тренировками.
+                  </p>
+                  <p class="catalog__slide-teacher">
+                    <span>Тренер: </span><span>Ирина Иванова</span>
+                  </p>
+                </div>
+              </div>
+              <div class="catalog__slide">
+                <img
+                  class="catalog__img"
+                  src="../images/catalog-3.jpg"
+                  alt="Хатха-йога для новичков"
+                />
+                <div class="catalog__slide-info">
+                  <h3 class="catalog__slide-title">
+                    Хатха-йога <br />для новичков
+                  </h3>
+                  <p class="catalog__slide-text">
+                    Полная гармония со своим телом вместе с интенсивной
+                    растяжкой мышц спины и шеи. Отличный вариант для сидячей
+                    работы.
+                  </p>
+                  <p class="catalog__slide-teacher">
+                    <span>Тренер: </span><span>Татьяна Сидорова</span>
+                  </p>
+                </div>
+              </div>
+              <div class="catalog__slide">
+                <img
+                  class="catalog__img"
+                  src="../images/catalog-3.jpg"
+                  alt="Хатха-йога для новичков"
+                />
+                <div class="catalog__slide-info">
+                  <h3 class="catalog__slide-title">
+                    Хатха-йога <br />для новичков
+                  </h3>
+                  <p class="catalog__slide-text">
+                    Полная гармония со своим телом вместе с интенсивной
+                    растяжкой мышц спины и шеи. Отличный вариант для сидячей
+                    работы.
+                  </p>
+                  <p class="catalog__slide-teacher">
+                    <span>Тренер: </span><span>Татьяна Сидорова</span>
+                  </p>
+                </div>
+              </div>
+              <div class="catalog__slide">
+                <img
+                  class="catalog__img"
+                  src="../images/catalog-3.jpg"
+                  alt="Хатха-йога для новичков"
+                />
+                <div class="catalog__slide-info">
+                  <h3 class="catalog__slide-title">
+                    Хатха-йога <br />для новичков
+                  </h3>
+                  <p class="catalog__slide-text">
+                    Полная гармония со своим телом вместе с интенсивной
+                    растяжкой мышц спины и шеи. Отличный вариант для сидячей
+                    работы.
+                  </p>
+                  <p class="catalog__slide-teacher">
+                    <span>Тренер: </span><span>Татьяна Сидорова</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="button catalog__button" href="#">Все тренировки</a>
+        </div>
+      </section>
+      <section class="page-section schedule" data-anchor="schedule">
+        <div class="container">
+          <h2 class="schedule__title title">Расписание</h2>
+          <table class="schedule__table">
+            <tr class="schedule__time">
+              <td class="schedule__hours"></td>
+              <td class="schedule__hours">12:00</td>
+              <td class="schedule__hours">15:00</td>
+              <td class="schedule__hours">17:00</td>
+            </tr>
+            <tr class="schedule__classes">
+              <td class="schedule__date">20 мая</td>
+              <td class="schedule__lesson lesson">
+                <h3 class="lesson__title">Кардио дома</h3>
+                <span class="lesson__teacher">Тренер: </span
+                ><span class="lesson__teacher-name">Ольга Кравцева</span>
+              </td>
+              <td class="schedule__lesson lesson">
+                <h3 class="lesson__title">Пилатес</h3>
+                <span class="lesson__teacher">Тренер: </span
+                ><span class="lesson__teacher-name">Екатерина Баева</span>
+              </td>
+              <td class="schedule__lesson lesson">
+                <h3 class="lesson__title">Растяжка</h3>
+                <span class="lesson__teacher">Тренер: </span
+                ><span class="lesson__teacher-name">Елена Чижова</span>
+              </td>
+            </tr>
+            <tr class="schedule__classes">
+              <td class="schedule__date">21 мая</td>
+              <td class="schedule__lesson lesson">
+                <h3 class="lesson__title">upper body</h3>
+                <span class="lesson__teacher">Тренер: </span
+                ><span class="lesson__teacher-name">Антон Вязенский</span>
+              </td>
+              <td class="schedule__lesson lesson">
+                <h3 class="lesson__title">хатха-йога</h3>
+                <span class="lesson__teacher">Тренер: </span
+                ><span class="lesson__teacher-name">Татьяна Сидорова</span>
+              </td>
+              <td class="schedule__lesson lesson">
+                <h3 class="lesson__title">табата</h3>
+                <span class="lesson__teacher">Тренер: </span
+                ><span class="lesson__teacher-name">Андрей Морозов</span>
+              </td>
+            </tr>
+          </table>
+          <a class="button schedule__button" href="#">Показать больше</a>
+        </div>
+      </section>
+
+      <section class="page-section new" data-anchor="new">
+        <div class="container">
+          <h2 class="new__title title">новая <br />программа</h2>
+          <div class="new__content-wrapper">
+            <div class="new__video-wrapper">
+              <img
+                class="new__img"
+                src="../images/new-1.jpg"
+                alt="Смотрите новую тренировку"
+              />
+            </div>
+            <div class="new__info-wrapper">
+              <h3 class="new__subtitle subtitle">Фитнес <br />с питомцами</h3>
+              <p class="new__info">
+                Настало время совместить приятное с полезным. Наш тренер
+                Светлана Петрова подготовила комплекс асан с домашними
+                питомцами. Понравится всем, особенно братьям меньшим.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 
+      <section class="page-section food" data-anchor="food">
+        <div class="container">
+          <h2 class="food__title title">food</h2>
+          <div class="food__content-container">
+            <div class="food__intro">
+              <h3 class="food__subtitle subtitle">fit&<br />healthy</h3>
+              <p class="food__info">
+                Ни для кого не секрет, что для желаемого результата очень важно
+                совмещать тренировки вместе с правильным питанием. Мы собрали
+                для вас самые вкусные и полезные рецепты, которые не сложно
+                повторить дома.
+              </p>
+            </div>
+            <div class="food__recipes">
+              <ul class="food__recipes-list">
+                <li class="food__recipes-item recipe-item">
+                  <img
+                    src="../images/recipe-1.jpg"
+                    alt="ПП-каша"
+                    class="recipe-item__img"
+                  />
+                  <div class="recipe-item__wrapper">
+                    <a class="recipe-item__link" href="#">
+                      <h3 class="recipe-item__title subtitle">пп-каша</h3>
+                    </a>
+                    <p class="recipe-item__info">
+                      Вкусный ПП-завтрак без заморочек! В этой утренней каше
+                      есть все и именно таким должен быть завтрак)...
+                    </p>
+                    <a class="button recipe-item__button" href="#">Подробнее</a>
+                  </div>
+                </li>
+                <li class="food__recipes-item recipe-item">
+                  <img
+                    src="../images/recipe-2.jpg"
+                    alt="Печеный авокадо"
+                    class="recipe-item__img"
+                  />
+                  <div class="recipe-item__wrapper">
+                    <a class="recipe-item__link" href="#">
+                      <h3 class="recipe-item__title subtitle">
+                        печеный авокадо
+                      </h3>
+                    </a>
+                    <p class="recipe-item__info">
+                      Авокадо либо любят либо ненавидят, а ведь это один из
+                      самых сбалансированных источников...
+                    </p>
+                    <a class="button recipe-item__button" href="#">Подробнее</a>
+                  </div>
+                </li>
+                <li class="food__recipes-item recipe-item">
+                  <img
+                    src="../images/recipe-3.jpg"
+                    alt="ПП-паста"
+                    class="recipe-item__img"
+                  />
+                  <div class="recipe-item__wrapper">
+                    <a class="recipe-item__link" href="#">
+                      <h3 class="recipe-item__title subtitle">пп-паста</h3>
+                    </a>
+                    <p class="recipe-item__info">
+                      Конечно же , наше блюдо не сможет заменить вкуснейшую
+                      настоящую пасту, но, зато, оно не...
+                    </p>
+                    <a class="button recipe-item__button" href="#">Подробнее</a>
+                  </div>
+                </li>
+              </ul>
+              <a class="button food__button" href="#">все рецепты</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="page-section feedback fp-auto-height"
+        data-anchor="feedback"
+      >
+        <div class="container">
+          <h2 class="feedback__title title">Остались <br />вопросы?</h2>
+          <form class="feedback__form">
+            <div class="feedback__form-inputs">
+              <input
+                class="feedback__form-input"
+                placeholder="Ваш e-mail"
+                type="text"
+              />
+              <input
+                class="feedback__form-input"
+                placeholder="Ваш вопрос"
+                type="text"
+              />
+            </div>
+            <button class="feedback__form-btn button" type="submit">
+              Отправить
+            </button>
+          </form>
+          <footer class="feedback__footer footer">
+            <div class="footer__container">
+              <a class="footer__logo-link" href="#top">
+                <img
+                  class="footer__logo"
+                  src="../images/logo.svg"
+                  alt="Логотип fitHome"
+                />
+              </a>
+              <div class="footer__lists-wrapper">
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-item">
+                    <a href="#catalog">Каталог</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href="#schedule">Расписание</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href="#new">Новая программа</a>
+                  </li>
+                  <li class="footer__menu-item"><a href="#food">Food</a></li>
+                </ul>
+                <ul class="footer__social-list">
+                  <li class="footer__social-item">
+                    <a href="#" class="footer__social-link">
+                      <img src="images/youtube.svg" alt="Мы в Youtube" />
+                    </a>
+                  </li>
+                  <li class="footer__social-item">
+                    <a href="#" class="footer__social-link">
+                      <img src="images/facebook.svg" alt="Мы в Facebook" />
+                    </a>
+                  </li>
+                  <li class="footer__social-item">
+                    <a href="#" class="footer__social-link">
+                      <img src="images/instagram.svg" alt="Мы в Instagram" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <p class="footer__copy">© 2019-2020</p>
+            </div>
+          </footer>
+        </div>
+      </section> -->
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
