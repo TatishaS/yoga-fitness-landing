@@ -31,7 +31,7 @@ gulp.task("css", function () {
     .src([
       "node_modules/normalize.css/normalize.css",
       "node_modules/slick-carousel/slick/slick.css",
-      "node_modules/fullpage.js/dist/fullpage.css",
+      //"node_modules/fullpage.js/dist/fullpage.css",
     ])
     .pipe(concat("_libs.scss"))
     .pipe(gulp.dest("app/scss"))
@@ -50,8 +50,9 @@ gulp.task("js", function () {
   return gulp
     .src([
       "node_modules/slick-carousel/slick/slick.js",
-      "node_modules/fullpage.js/dist/fullpage.js",
-      "node_modules/fullpage.js/vendors/scrolloverflow.js",
+      //"node_modules/fullpage.js/dist/fullpage.js",
+      //"node_modules/fullpage.js/vendors/scrolloverflow.js",
+      //"node_modules/fullpage.js/dist/fullpage.extensions.min.js",
     ])
     .pipe(concat("libs.min.js"))
     .pipe(uglify())

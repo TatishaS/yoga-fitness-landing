@@ -9,7 +9,7 @@ $(function () {
     $(".menu__list").removeClass("menu__list--active");
   });
 
-  $("#fullpage").fullpage({
+  /* $("#fullpage").fullpage({
     autoScrolling: true,
     scrollHorizontally: true,
     sectionSelector: ".page-section",
@@ -17,7 +17,7 @@ $(function () {
     scrollOverflow: true,
     menu: "#header__nav",
     anchors: ["top", "catalog", "schedule", "new", "food", "feedback"],
-  });
+  }); */
 
   let $sliderIntro = $(".slider__items");
   let sliderCounter = document.createElement("div");
@@ -38,21 +38,21 @@ $(function () {
     $(catalogCounter).text(currentSlide + "/" + slick.slideCount);
   }
 
-  /*попробовать: function updateCounter(slick) {
+  /*
+
+  function updateCounter(slick) {
     currentSlide = slick.currentSlide + 1;
     $(this).text(currentSlide + "/" + slick.slideCount);
-  }
-
-  */
+  } */
 
   $sliderIntro.on("init", function (event, slick) {
     $sliderIntro.append(sliderCounter);
-    updateSliderCounter(slick);
+    updateSliderCounter(slick); // проверить
   });
 
   $sliderCatalog.on("init", function (event, slick) {
     $sliderCatalog.append(catalogCounter);
-    updateCatalogCounter(slick);
+    updateCatalogCounter(slick); // проверить
   });
 
   $sliderIntro.slick({
@@ -147,9 +147,6 @@ $(function () {
     "afterChange",
     function (event, slick, currentSlide, nextSlide) {
       // Удаляю временные CSS классы
-      $(".slick-current-clone-animate", $sliderIntro).removeClass(
-        "slick-current-clone-animate"
-      );
       $(".slick-current-clone-animate", $sliderIntro).removeClass(
         "slick-current-clone-animate"
       );
