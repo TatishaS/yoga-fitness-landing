@@ -216,7 +216,8 @@
   }
   &__slider {
     position: relative;
-    width: 795px;
+    //width: 795px;
+    width: 1095px;
     &::after {
       content: "play";
       text-align: center;
@@ -280,9 +281,12 @@
   }
 
   &__text {
+    display: block;
     position: absolute;
-    top: 640px;
-    left: -280px;
+    margin: 0;
+    top: 580px;
+    left: -400px;
+    z-index: 100;
   }
 }
 
@@ -318,6 +322,10 @@
   transform: translateY(0) scale(1);
   transform-origin: center bottom;
 }
+
+/* .slider .slick-slide.slick-active.slick-current .slider__text {
+  display: block;
+} */
 
 /* ------------------------------- */
 /* CATALOG */

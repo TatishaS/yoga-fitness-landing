@@ -20,8 +20,11 @@ $(function () {
   }); */
 
   let $sliderIntro = $(".slider__items");
+
   let sliderCounter = document.createElement("div");
+  let sliderText = document.createElement("p");
   sliderCounter.classList.add("slider__counter");
+  sliderText.classList.add("slider__text");
 
   let $sliderCatalog = $(".catalog__slides");
   let catalogCounter = document.createElement("div");
@@ -29,8 +32,14 @@ $(function () {
 
   function updateSliderCounter(slick) {
     currentSlide = slick.currentSlide + 1;
-
     $(sliderCounter).text(currentSlide + "/" + slick.slideCount);
+  }
+
+  function updateSliderText(slick, index) {
+    let elem = slick.$slides.get(index);
+    let imgElem = $(elem).find(".slider__img");
+    let imageAlt = $(imgElem).attr("alt");
+    $(sliderText).text(imageAlt);
   }
 
   function updateCatalogCounter(slick) {
@@ -38,16 +47,11 @@ $(function () {
     $(catalogCounter).text(currentSlide + "/" + slick.slideCount);
   }
 
-  /*
-
-  function updateCounter(slick) {
-    currentSlide = slick.currentSlide + 1;
-    $(this).text(currentSlide + "/" + slick.slideCount);
-  } */
-
   $sliderIntro.on("init", function (event, slick) {
     $sliderIntro.append(sliderCounter);
+    $sliderIntro.append(sliderText);
     updateSliderCounter(slick); // проверить
+    updateSliderText(slick); // проверить
   });
 
   $sliderCatalog.on("init", function (event, slick) {
@@ -111,8 +115,9 @@ $(function () {
   $sliderIntro.on(
     "beforeChange",
     function (event, slick, currentSlide, nextSlide) {
-      var direction,
+      let direction,
         slideCountZeroBased = slick.slideCount - 1;
+      console.log(slideCountZeroBased);
 
       if (nextSlide == currentSlide) {
         direction = "same";
@@ -153,6 +158,7 @@ $(function () {
 
       // Обновляю счетчик
       updateSliderCounter(slick);
+      updateSliderText(slick, currentSlide);
     }
   );
 
