@@ -20,7 +20,9 @@
     "normalize.css": "^8.0.1"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "fullpage.js": "^3.0.9",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "wow.js": "^1.2.2"
   }
 }

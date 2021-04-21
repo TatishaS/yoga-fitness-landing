@@ -172,6 +172,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 505px;
+    min-height: 845px;
     margin-right: 70px;
   }
   &__title {
@@ -197,7 +198,7 @@
     font-size: 18px;
     line-height: 27px;
     margin: 0;
-    margin-bottom: 175px;
+    margin-bottom: 262px;
   }
   &__btn {
     width: 420px;
@@ -216,8 +217,8 @@
   }
   &__slider {
     position: relative;
-    //width: 795px;
-    width: 1095px;
+    width: 795px;
+    //width: 1095px;
     &::after {
       content: "play";
       text-align: center;
@@ -283,9 +284,13 @@
   &__text {
     display: block;
     position: absolute;
+    max-width: 200px;
+
     margin: 0;
-    top: 580px;
-    left: -400px;
+    top: 600px;
+    left: -310px;
+    text-align: left;
+
     z-index: 100;
   }
 }
@@ -323,10 +328,6 @@
   transform-origin: center bottom;
 }
 
-/* .slider .slick-slide.slick-active.slick-current .slider__text {
-  display: block;
-} */
-
 /* ------------------------------- */
 /* CATALOG */
 /* -------------------------------*/
@@ -345,7 +346,6 @@
   }
   &__slides {
     margin-bottom: 60px;
-    //width: 100%;
   }
 
   &__slides .slick-slide {
@@ -422,11 +422,6 @@
   background-color: $base-color;
 }
 
-/* .catalog__slides .slick-track {
-  display: flex;
-  justify-content: space-between;
-} */
-
 .slick-slide.catalog__slides {
   height: auto;
 }
@@ -483,7 +478,7 @@
     vertical-align: bottom;
   }
 
-  &__date {
+  &__date--left {
     width: 295px;
     @extend %mont-black;
     color: $accent-color;
@@ -491,6 +486,10 @@
     line-height: 55px;
     padding-top: 90px;
     padding-right: 150px;
+  }
+
+  &__date--top {
+    display: none;
   }
 
   &__lesson {
@@ -521,6 +520,7 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 95px;
+  vertical-align: top;
 
   &__title {
     @extend %mont-black;
@@ -554,6 +554,26 @@
   }
   &__video-wrapper {
     width: 781px;
+    position: relative;
+    &::after {
+      content: "play";
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 257px;
+      height: 257px;
+      position: absolute;
+      top: 40px;
+      left: 650px;
+      border: 2px solid $accent-color;
+      background: transparent;
+      color: $accent-color;
+      @extend %mont-black;
+      font-size: 20px;
+      line-height: 22px;
+      border-radius: 50%;
+    }
   }
   &__img {
     display: block;
@@ -585,7 +605,7 @@
     justify-content: space-between;
   }
   &__intro {
-    width: 400px;
+    width: 370px;
     padding-top: 60px;
     padding-right: 20px;
   }
@@ -746,6 +766,10 @@
   &__menu-list {
     width: 460px;
     justify-content: space-between;
+  }
+  &__menu-link {
+    text-decoration: none;
+    color: $text-color;
   }
   &__social-list {
     width: 110px;

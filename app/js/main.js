@@ -75,6 +75,8 @@ $(function () {
           slidesToScroll: 1,
           arrows: false,
           variableWidth: false,
+          infinite: true,
+          speed: 300,
           dots: true,
         },
       },
@@ -86,6 +88,7 @@ $(function () {
     slidesToScroll: 1,
     variableWidth: true,
     infinite: true,
+    speed: 300,
     prevArrow:
       '<button type="button" class="slick-prev"><img src="images/arrow-left.svg" alt="Предыдущее видео"></button>',
     nextArrow:
@@ -104,9 +107,8 @@ $(function () {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          variableWidth: false,
-          arrows: false,
           dots: true,
+          arrows: false,
         },
       },
     ],
@@ -166,4 +168,6 @@ $(function () {
     // Обновляю счетчик
     updateCatalogCounter(slick);
   });
+
+  new WOW().init();
 });

@@ -16,7 +16,7 @@
     <header class="header">
       <div class="container">
         <nav class="header__menu menu" id="header__nav">
-          <button class="menu__btn">
+          <button class="menu__btn wow animate__animated animate__fadeInDown">
             <span class="menu__btn-line"></span>
           </button>
           <ul class="menu__list">
@@ -37,7 +37,10 @@
             </li>
           </ul>
           <div data-menuanchor="top">
-            <a class="menu__logo-link" href="#top">
+            <a
+              class="menu__logo-link wow animate__animated animate__fadeInDown"
+              href="#top"
+            >
               <img
                 src="../images/logo.svg"
                 alt="Логотип FitCosy"
@@ -52,20 +55,23 @@
       <section class="page-section intro" data-anchor="top">
         <div class="intro__wrapper">
           <div class="intro__info">
-            <h1 class="intro__title">
-              <span class="intro__title-part intro__title-part--1">Home</span>
-              <span class="intro__title-part intro__title-part--2"
+            <h1
+              class="intro__title"
+            >
+              <span class="intro__title-part intro__title-part--1 wow animate__animated animate__fadeInLeft" data-wow-delay="0.1s">Home</span>
+              <span class="intro__title-part intro__title-part--2 wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s"
                 >fitness</span
               >
             </h1>
-            <p class="intro__descr">
+            <p class="intro__descr wow animate__animated animate__fadeInUp"
+            data-wow-delay="0.3s"">
               Лучшие тренировки теперь не выходя из дома. Каждую неделю на нашем
               портале.
             </p>
             <a class="intro__btn button" href="#">Купить тренировку</a>
           </div>
 
-          <div class="intro__slider slider">
+          <div class="intro__slider slider  wow animate__animated animate__fadeIn" data-wow-delay="0.2s">
             <ul class="slider__items">
               <li class="slider__item">
                 <img
@@ -73,7 +79,6 @@
                   src="../images/preview-1@1x.jpg"
                   alt="Комплексная тренировка на мышцы ног"
                 />
-                <!-- <p class="slider__text">Комплексная тренировка на мышцы ног</p> -->
               </li>
               <li class="slider__item">
                 <img
@@ -81,7 +86,6 @@
                   src="../images/preview-2@1x.jpg"
                   alt="Тренировка на укрепление мышц спины"
                 />
-                <!-- <p class="slider__text">Тренировка на укрепление мышц спины</p> -->
               </li>
               <li class="slider__item">
                 <img
@@ -89,7 +93,6 @@
                   src="../images/preview-3@1x.jpg"
                   alt="Мягкая растяжка для всего тела"
                 />
-                <!-- <p class="slider__text">Мягкая растяжка для всего тела</p> -->
               </li>
             </ul>
           </div>
@@ -203,18 +206,20 @@
           <a class="button catalog__button" href="#">Все тренировки</a>
         </div>
       </section>
+
       <section class="page-section schedule" data-anchor="schedule">
         <div class="container">
           <h2 class="schedule__title title">Расписание</h2>
           <table class="schedule__table">
             <tr class="schedule__time">
-              <td class="schedule__hours"></td>
+              <td class="schedule__hours schedule__hours--empty"></td>
               <td class="schedule__hours">12:00</td>
               <td class="schedule__hours">15:00</td>
               <td class="schedule__hours">17:00</td>
             </tr>
             <tr class="schedule__classes">
-              <td class="schedule__date">20 мая</td>
+              <td class="schedule__date schedule__date--left">20 января</td>
+
               <td class="schedule__lesson lesson">
                 <h3 class="lesson__title">Кардио дома</h3>
                 <span class="lesson__teacher">Тренер: </span
@@ -232,7 +237,8 @@
               </td>
             </tr>
             <tr class="schedule__classes">
-              <td class="schedule__date">21 мая</td>
+              <td class="schedule__date schedule__date--left">21 декабря</td>
+
               <td class="schedule__lesson lesson">
                 <h3 class="lesson__title">upper body</h3>
                 <span class="lesson__teacher">Тренер: </span
@@ -276,7 +282,7 @@
           </div>
         </div>
       </section>
-      <!-- 
+
       <section class="page-section food" data-anchor="food">
         <div class="container">
           <h2 class="food__title title">food</h2>
@@ -351,6 +357,7 @@
           </div>
         </div>
       </section>
+
       <section
         class="page-section feedback fp-auto-height"
         data-anchor="feedback"
@@ -363,11 +370,13 @@
                 class="feedback__form-input"
                 placeholder="Ваш e-mail"
                 type="text"
+                required
               />
               <input
                 class="feedback__form-input"
                 placeholder="Ваш вопрос"
                 type="text"
+                required
               />
             </div>
             <button class="feedback__form-btn button" type="submit">
@@ -386,15 +395,17 @@
               <div class="footer__lists-wrapper">
                 <ul class="footer__menu-list">
                   <li class="footer__menu-item">
-                    <a href="#catalog">Каталог</a>
+                    <a class="footer__menu-link" href="#catalog">Каталог</a>
                   </li>
                   <li class="footer__menu-item">
-                    <a href="#schedule">Расписание</a>
+                    <a class="footer__menu-link" href="#schedule">Расписание</a>
                   </li>
                   <li class="footer__menu-item">
-                    <a href="#new">Новая программа</a>
+                    <a class="footer__menu-link" href="#new">Новая программа</a>
                   </li>
-                  <li class="footer__menu-item"><a href="#food">Food</a></li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#food">Food</a>
+                  </li>
                 </ul>
                 <ul class="footer__social-list">
                   <li class="footer__social-item">
@@ -418,7 +429,7 @@
             </div>
           </footer>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
