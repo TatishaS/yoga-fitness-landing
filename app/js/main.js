@@ -76,7 +76,8 @@ $(function () {
           arrows: false,
           variableWidth: false,
           infinite: true,
-          speed: 300,
+          autoplay: true,
+          autoplaySpeed: 3000,
           dots: true,
         },
       },
@@ -99,6 +100,8 @@ $(function () {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
           variableWidth: false,
         },
       },
@@ -109,6 +112,7 @@ $(function () {
           slidesToScroll: 1,
           dots: true,
           arrows: false,
+          variableWidth: false,
         },
       },
     ],
@@ -169,5 +173,6 @@ $(function () {
     updateCatalogCounter(slick);
   });
 
+  // wow.js animation initialization
   new WOW().init();
 });
