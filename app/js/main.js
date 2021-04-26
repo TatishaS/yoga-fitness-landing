@@ -9,7 +9,7 @@ $(function () {
     $(".menu__list").removeClass("menu__list--active");
   });
 
-  /* $("#fullpage").fullpage({
+  $("#fullpage").fullpage({
     autoScrolling: true,
     scrollHorizontally: true,
     sectionSelector: ".page-section",
@@ -17,7 +17,7 @@ $(function () {
     scrollOverflow: true,
     menu: "#header__nav",
     anchors: ["top", "catalog", "schedule", "new", "food", "feedback"],
-  }); */
+  });
 
   let $sliderIntro = $(".slider__items");
 
